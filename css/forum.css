@@ -21,6 +21,12 @@ body {
     display: flex;
 }
 
+#user {
+    grid-area: forum;
+    display: flex;
+    flex-direction: column;
+}
+
 #forum {
     grid-area: forum;
     display: flex;
@@ -30,8 +36,9 @@ body {
     display: grid;
     margin: 10vh 20vw;
     grid-template-columns: 128px 1fr;
-    grid-template-rows: 128px 1fr;
+    grid-template-rows: 128px 128px 1fr;
     grid-template-areas:
         "logo navigation"
+        "user user"
         "forum forum";
 }
