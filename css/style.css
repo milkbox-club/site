@@ -1,0 +1,8 @@
+@font-face { 
+    font-family: "gohu";
+    src: url("../css/gohu.woff") format('woff');
+}
+
+body {
+    font-family: "gohu", sans-serif;
+}
