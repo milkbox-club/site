@@ -26,6 +26,7 @@
 .post .title {
     grid-area: title;
     display: flex;
+    letter-spacing: 1px;
 }
 
 .post .body {
