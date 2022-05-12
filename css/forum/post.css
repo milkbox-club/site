@@ -1,11 +1,11 @@
 .post {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 32px repeat(1fr, 3);
     grid-template-rows: repeat(auto, 3);
     grid-template-areas:
-        "margin title title"
-        "margin body body"
-        "margin votes author";
+        "margin title title title"
+        "margin body body body"
+        "margin votes posted_at author";
     margin-bottom: 32px;
     border: coral 1px solid; /* debug */
 }
@@ -33,11 +33,14 @@
 .post .author {
     grid-area: author;
     display: flex;
+}
 
+.post .posted_at {
+    grid-area: posted_at;
+    display: flex;
 }
 
 .post .votes {
     grid-area: votes;
     display: flex;
-
 }
