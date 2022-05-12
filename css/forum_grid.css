@@ -27,8 +27,8 @@ body {
     flex-direction: column;
 }
 
-#forum {
-    grid-area: forum;
+#posts {
+    grid-area: posts;
     display: flex;
 }
 
@@ -40,5 +40,5 @@ body {
     grid-template-areas:
         "logo navigation"
         "user user"
-        "forum forum";
+        "posts posts";
 }
