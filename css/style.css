@@ -3,7 +3,17 @@
     src: url("../css/gohu.woff") format('woff');
 }
 
+@font-face { 
+    font-family: "MD IO Regular";
+    src: url("../css/MDIO0.4-Regular.woff") format('woff');
+}
+
+@font-face { 
+    font-family: "MD IO Bold";
+    src: url("../css/MDIO0.4-Bold.woff") format('woff');
+}
+
 body {
-    font-family: "gohu", sans-serif;
-    font-smooth: never;
+    font-family: "MD IO Regular", sans-serif;
+    font-smooth: auto;
 }
