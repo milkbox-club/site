@@ -7,11 +7,9 @@
         "margin body body body"
         "margin votes posted_at author";
     margin-bottom: 32px;
-    border: coral 1px solid; /* debug */
 }
 
 .post > div {
-    border: coral 1px solid; /* debug */
     padding: 4px 8px;
 }
 
@@ -44,4 +42,8 @@
 .post .votes {
     grid-area: votes;
     display: flex;
+}
+
+.post .body, .post .title, .post .votes {
+    border-left: 1px solid #CFCFCF;
 }
