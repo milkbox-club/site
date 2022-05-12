@@ -2,7 +2,6 @@ body {
     display: flex;
     width: 100%;
     overflow-x: hidden;
-    font-family: sans-serif;
 }
 
 #logo {
