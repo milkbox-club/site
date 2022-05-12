@@ -1,7 +1,7 @@
 .post {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 32px 32px 32px;
+    grid-template-rows: repeat(auto, 3);
     grid-template-areas:
         "title title"
         "body body"
