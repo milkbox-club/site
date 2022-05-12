@@ -17,6 +17,7 @@
 .post .margin {
     grid-area: margin;
     display: flex;
+    width: 100%;
 }
 
 .post .title {
