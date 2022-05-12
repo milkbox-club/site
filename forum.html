@@ -36,8 +36,9 @@
         fetch(url).then(response => response.json()).then(data => {
             console.log('response_data=', data);
             if (('enabled' in data) && data.enabled == true) {
+                var alias = ('alias' in data) ? data.alias : 'User';
                 var title = document.getElementById('title');
-                title.innerText = `Welcome ${app_id}!`
+                title.innerText = `Welcome ${alias}!`
                 var now_playing = document.getElementById('now-playing');
                 now_playing.innerText = `Now playing ${data.player.artist} - ${data.player.track} (${data.player.collection})...`;
             } else {
