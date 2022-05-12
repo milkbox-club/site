@@ -33,7 +33,7 @@
     const app_id = urlParams.get('application_id');
     console.log(app_id);
     if (app_id != null) {
-        const url = `./api/getUser?=application_id=${app_id}`;
+        const url = `./api/getUser?application_id=${app_id}`;
         console.log(url);
         fetch(url)
             .then(response => response.json())
