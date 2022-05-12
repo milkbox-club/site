@@ -10,7 +10,7 @@
 }
 
 .post > div {
-    padding: 4px 8px;
+    padding: 0 8px;
 }
 
 .post .margin {
@@ -49,5 +49,5 @@
 }
 
 .post .body, .post .title, .post .votes, .post .posted_at, .post .author {
-    margin: 2px 0;
+    margin: 8px 0;
 }
