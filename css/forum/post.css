@@ -6,6 +6,7 @@
         "margin title title title"
         "margin body body body"
         "margin votes posted_at author";
+    background-color: #F1F1F1;
     margin-bottom: 32px;
 }
 
@@ -18,6 +19,7 @@
     grid-area: margin;
     display: flex;
     margin: 8px 0;
+    color: #989EA5;
 }
 
 .post .title {
@@ -34,11 +36,13 @@
 .post .author {
     grid-area: author;
     display: flex;
+    color: #989EA5;
 }
 
 .post .posted_at {
     grid-area: posted_at;
     display: flex;
+    color: #989EA5;
 }
 
 .post .votes {
@@ -47,5 +51,5 @@
 }
 
 .post .body, .post .title, .post .votes {
-    border-left: 2px solid #CFCFCF;
+    border-left: 2px solid #989EA5;
 }
