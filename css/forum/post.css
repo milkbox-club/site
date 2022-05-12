@@ -12,7 +12,7 @@
 
 .post > div {
     border: coral 1px solid; /* debug */
-    margin: 4px 8px;
+    padding: 4px 8px;
 }
 
 .post .margin {
