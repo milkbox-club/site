@@ -1,11 +1,11 @@
 .post {
     display: grid;
-    grid-template-columns: repeat(2, auto) 1fr;
+    grid-template-columns: repeat(3, auto) 1fr;
     grid-template-rows: repeat(3, auto);
     grid-template-areas:
-        "margin title title"
-        "margin body body"
-        "margin votes posted_at";
+        "margin title title title"
+        "margin body body body"
+        "margin votes bullet posted_at";
     background-color: #F1F1F1;
     margin-bottom: 32px;
     padding: 8px 16px;
@@ -32,6 +32,12 @@
 .post .body {
     grid-area: body;
     display: flex;
+}
+
+.post .bullet {
+    grid-area: bullet;
+    display: flex;
+    color: #989EA5;
 }
 
 .post .votes {
