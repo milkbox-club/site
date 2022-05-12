@@ -15,5 +15,9 @@
 
 body {
     font-family: "MD IO Regular", sans-serif;
-    font-smooth: auto;
+}
+
+b {
+    font-family: "MD IO Bold", sans-serif;
+    font-weight: inherit;
 }

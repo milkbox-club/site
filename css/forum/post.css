@@ -29,11 +29,6 @@
     letter-spacing: 1px;
 }
 
-.post .title b {
-    font-family: "MD IO Bold", sans-serif;
-    font-weight: inherit;
-}
-
 .post .body {
     grid-area: body;
     display: flex;
