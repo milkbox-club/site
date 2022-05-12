@@ -13,7 +13,7 @@
 
 .post > div {
     padding: 0 16px;
-    margin: 8px 0;
+    margin: 6px 0;
 }
 
 .post .margin {
@@ -31,13 +31,13 @@
 .post .body {
     grid-area: body;
     display: flex;
-
 }
 
 .post .votes {
     grid-area: votes;
     display: flex;
     color: #989EA5;
+    text-decoration: underline;
 }
 
 .post .posted_at {
@@ -50,6 +50,7 @@
     grid-area: author;
     display: flex;
     color: #989EA5;
+    text-decoration: underline;
 }
 
 .post .body, .post .title, .post .votes {
