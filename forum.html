@@ -15,12 +15,9 @@
         height: 100vh;
         align-items: center;
         justify-content: center;
+        flex-direction: column;
         overflow: hidden;
-    }
-
-    .carton {
-        height: 30vh;
-        filter: invert(1);
+        font-family: sans-serif;
     }
 </style>
 
@@ -45,7 +42,7 @@
                 now_playing.innerText = `Now playing ${data.player.artist} - ${data.player.track} (${data.player.collection})...`;
             } else {
                 console.log(`application_id=${add_id} not enabled`);
-                // window.location = '/';
+                window.location = '/';
             }
         });
     }
