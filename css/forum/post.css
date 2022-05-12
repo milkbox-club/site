@@ -10,12 +10,14 @@
 }
 
 .post > div {
-    padding: 0 8px;
+    padding: 0 16px;
+    margin: 8px 0;
 }
 
 .post .margin {
     grid-area: margin;
     display: flex;
+    margin: 8px 0;
 }
 
 .post .title {
@@ -46,8 +48,4 @@
 
 .post .body, .post .title, .post .votes {
     border-left: 2px solid #CFCFCF;
-}
-
-.post .body, .post .title, .post .votes, .post .posted_at, .post .author {
-    margin: 8px 0;
 }
