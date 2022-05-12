@@ -45,5 +45,9 @@
 }
 
 .post .body, .post .title, .post .votes {
-    border-left: 1px solid #CFCFCF;
+    border-left: 2px solid #CFCFCF;
+}
+
+.post .body, .post .title, .post .votes, .post .posted_at, .post .author {
+    margin: 2px 0;
 }
