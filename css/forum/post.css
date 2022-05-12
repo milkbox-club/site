@@ -38,6 +38,7 @@
     grid-area: bullet;
     display: flex;
     color: #989EA5;
+    padding: 0;
 }
 
 .post .votes {
