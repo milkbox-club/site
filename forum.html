@@ -25,7 +25,8 @@
 </style>
 
 <body>
-    <img class="carton" src="./assets/carton.png">
+    <h1 id="title"></h1>
+    <h2 id="now-playing"></h2>
 </body>
 
 <script>
@@ -38,7 +39,12 @@
         fetch(url).then(response => response.json()).then(data => {
             if (('enabled' in data) && data.enabled == true) {
                 window.location = '/forum.html?application_id=${app_id}';
-                console.log(data);
+                var title = document.getElementById('title');
+                title.innerText = `Welcome ${app_id}!`
+                var now_playing = document.getElementById('now-playing');
+                now_playing.innerText = `Now playing ${data.player.artist} - ${data.player.track} (${data.player.collection})...`;
+            } else {
+                window.location = '/';
             }
         });
     }
