@@ -36,9 +36,9 @@
         const url = `/api/getUser?application_id=${app_id}`;
         console.log(url);
         fetch(url).then(response => response.json()).then(data => {
-            if (('enabled' in data) && data.enabled == true) {
-                window.location = '/forum.html?application_id=${app_id}';
-                console.log(data);
+            console.log(data);
+            if (('enabled' in data) && (data.enabled == true)) {
+                window.location = `/forum.html?application_id=${app_id}`;
             }
         });
     }
