@@ -1,0 +1,37 @@
+.post {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 32px 32px 32px;
+    grid-template-areas:
+        "logo navigation"
+        "user user"
+        "posts posts";
+    border: coral; /* debug */
+}
+
+.post > div {
+    border: coral; /* debug */
+}
+
+.post .title {
+    grid-area: title;
+    display: flex;
+}
+
+.post .body {
+    grid-area: body;
+    display: flex;
+
+}
+
+.post .author {
+    grid-area: author;
+    display: flex;
+
+}
+
+.post .votes {
+    grid-area: votes;
+    display: flex;
+
+}
