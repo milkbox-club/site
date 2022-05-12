@@ -1,6 +1,6 @@
 body {
     display: flex;
-    width: 100vw;
+    width: 100%;
     overflow-x: hidden;
     font-family: sans-serif;
 }
@@ -35,6 +35,7 @@ body {
 
 #grid {
     display: grid;
+    width: 100%;
     margin: 10vh 20vw;
     grid-template-columns: 128px 1fr;
     grid-template-rows: 128px 128px 1fr;
