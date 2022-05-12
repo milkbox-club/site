@@ -33,7 +33,7 @@
     const app_id = urlParams.get('application_id');
     console.log(app_id);
     if (app_id != null) {
-        fetch(`https://milbox.club/api/getUser?=application_id=${app_id}`)
+        fetch(`./api/getUser?=application_id=${app_id}`)
             .then(response => response.json())
             .then(data => console.log(data));
     }
