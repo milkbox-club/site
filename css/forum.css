@@ -22,7 +22,7 @@ body {
 }
 
 #user {
-    grid-area: forum;
+    grid-area: user;
     display: flex;
     flex-direction: column;
 }
