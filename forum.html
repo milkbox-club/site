@@ -37,6 +37,7 @@
         const url = `/api/getUser?application_id=${app_id}`;
         console.log(url);
         fetch(url).then(response => response.json()).then(data => {
+            console.log(data);
             if (('enabled' in data) && data.enabled == true) {
                 window.location = '/forum.html?application_id=${app_id}';
                 var title = document.getElementById('title');
@@ -44,7 +45,8 @@
                 var now_playing = document.getElementById('now-playing');
                 now_playing.innerText = `Now playing ${data.player.artist} - ${data.player.track} (${data.player.collection})...`;
             } else {
-                window.location = '/';
+                console.log(`application_id=${application_id} not enabled`);
+                // window.location = '/';
             }
         });
     }
