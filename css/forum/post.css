@@ -1,6 +1,6 @@
 .post {
     display: grid;
-    grid-template-columns: 32px repeat(2, auto) 1fr;
+    grid-template-columns: repeat(3, auto) 1fr;
     grid-template-rows: repeat(3, auto);
     grid-template-areas:
         "margin title title title"
