@@ -3,14 +3,14 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 32px 32px 32px;
     grid-template-areas:
-        "logo navigation"
-        "user user"
-        "posts posts";
-    border: coral; /* debug */
+        "title title"
+        "body body"
+        "votes author";
+    border: coral 1px solid; /* debug */
 }
 
 .post > div {
-    border: coral; /* debug */
+    border: coral 1px solid; /* debug */
 }
 
 .post .title {
