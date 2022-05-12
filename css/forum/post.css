@@ -8,6 +8,7 @@
         "margin votes posted_at author";
     background-color: #F1F1F1;
     margin-bottom: 32px;
+    padding: 8px 16px;
 }
 
 .post > div {
@@ -33,8 +34,8 @@
 
 }
 
-.post .author {
-    grid-area: author;
+.post .votes {
+    grid-area: votes;
     display: flex;
     color: #989EA5;
 }
@@ -45,9 +46,10 @@
     color: #989EA5;
 }
 
-.post .votes {
-    grid-area: votes;
+.post .author {
+    grid-area: author;
     display: flex;
+    color: #989EA5;
 }
 
 .post .body, .post .title, .post .votes {
