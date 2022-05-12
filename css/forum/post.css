@@ -1,17 +1,22 @@
 .post {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: repeat(auto, 3);
     grid-template-areas:
-        "title title"
-        "body body"
-        "votes author";
+        "margin title title"
+        "margin body body"
+        "margin votes author";
     margin-bottom: 32px;
     border: coral 1px solid; /* debug */
 }
 
 .post > div {
     border: coral 1px solid; /* debug */
+}
+
+.post .margin {
+    grid-area: margin;
+    display: flex;
 }
 
 .post .title {
