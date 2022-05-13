@@ -4,7 +4,8 @@
     margin: 10vh 32px;
     grid-template-columns: 1fr auto;
     grid-template-rows: repeat(auto, 4) 1fr;
-    grid-gap: 32px;
+    grid-row-gap: 32px;
+    grid-column-gap: 64px;
     grid-template-areas:
         "logo blank"
         "user navigation"
