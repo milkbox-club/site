@@ -12,7 +12,7 @@
         "posts posts posts";
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 800px) {
     #grid {
         width: 50vw;
         margin: 10vh 0px;
@@ -52,7 +52,7 @@
     grid-area: filter;
     display: grid;
     width: 100%;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto 1fr;
     grid-template-rows: auto;
     grid-template-areas:
         "heading select";
