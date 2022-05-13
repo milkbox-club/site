@@ -11,6 +11,7 @@ body {
     margin: 10vh 0;
     grid-template-columns: 128px auto 1fr;
     grid-template-rows: 128px auto 1fr;
+    grid-gap: 32px;
     grid-template-areas:
         "logo user navigation"
         "notice notice notice"
