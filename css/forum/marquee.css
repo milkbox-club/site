@@ -9,7 +9,8 @@
     grid-gap: 0;
     grid-template-areas:
         "top top right"
-        "left page right"
+        "left page right";
+    user-select: none;
 }
 
 @keyframes move {
