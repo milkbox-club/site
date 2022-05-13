@@ -66,33 +66,33 @@
         "heading select";
 }
 
-#filter > #heading {
+#filter > #filter-heading {
     grid-area: heading;
     display: flex;
     align-items: center;
     padding: 0;
 }
 
-#filter > #select {
+#filter > #filter-select {
     grid-area: select;
     display: flex;
     justify-content: flex-end;
     padding: 0;
 }
 
-#filter > #select ul {
+#filter > #filter-select ul {
     list-style: none;
     margin: auto 0;
 }
 
-#filter > #select li {
+#filter > #filter-select li {
     display: inline-block;
     color: #989EA5;
     padding: 8px 16px;
     cursor: pointer;
 }
 
-#filter > #select li.current {
+#filter > #filter-select li.current {
     background-color: #000000;
     color: #ffffff;
     border-radius: 32px;
