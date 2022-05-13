@@ -19,9 +19,14 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden;
+    caret-color: transparent;
 }
 
 b {
     font-family: "MD IO Bold", sans-serif;
     font-weight: inherit;
+}
+
+a {
+    user-select: none;
 }
