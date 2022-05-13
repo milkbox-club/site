@@ -19,7 +19,7 @@
 .post .margin {
     grid-area: margin;
     display: flex;
-    margin: 8px 16px;
+    margin: 8px 0px;
     color: #989EA5;
 }
 
