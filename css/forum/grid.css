@@ -39,6 +39,7 @@
 #navigation {
     grid-area: navigation;
     display: flex;
+    justify-content: center;
 }
 
 #user {
