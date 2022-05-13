@@ -2,7 +2,6 @@
     display: grid;
     width: 100vw;
     min-height: 100vh;
-    margin: 10vh 0;
     grid-template-columns: 32px 1fr 32px;
     grid-template-rows: 32px 1fr;
     grid-gap: 0;
