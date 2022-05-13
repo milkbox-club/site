@@ -9,12 +9,12 @@ body {
     display: grid;
     width: 50vw;
     margin: 10vh 0;
-    grid-template-columns: 128px 1fr;
-    grid-template-rows: 128px 128px 1fr;
+    grid-template-columns: 128px auto 1fr;
+    grid-template-rows: 128px auto 1fr;
     grid-template-areas:
-        "logo navigation"
-        "user user"
-        "posts posts";
+        "logo user navigation"
+        "notice notice notice"
+        "posts posts notice";
 }
 
 #logo {
@@ -38,6 +38,13 @@ body {
     display: flex;
     flex-direction: column;
 }
+
+#notice {
+    grid-area: user;
+    display: flex;
+    flex-direction: column;
+}
+
 
 #posts {
     grid-area: posts;
