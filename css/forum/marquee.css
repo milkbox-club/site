@@ -36,20 +36,19 @@
 
 #marquee #left {
     grid-area: left;
-    width: 100vh;
+    width: calc(100vh - 32px);
     transform: rotate(90deg) rotate(180deg) translateX(calc(-100%)); /* rotate and center */
     transform-origin: top left;
 }
 
-
 #marquee #top {
     grid-area: top;
-    width: 100vw;
+    width: calc(100vw - 32px);
 }
 
 #marquee #right {
     grid-area: right;
-    width: 100vh;
+    width: calc(100vh - 32px);
     transform: rotate(90deg) translateY(calc(-100%)); /* rotate and center */
     transform-origin: top left;
 }
