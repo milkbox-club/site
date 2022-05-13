@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/png" href="./assets/carton.png"/>
     <link rel="stylesheet" type="text/css" href="./css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/forum/marquee.css"/>
     <link rel="stylesheet" type="text/css" href="./css/forum/grid.css"/>
     <link rel="stylesheet" type="text/css" href="./css/forum/post.css"/>
     <link rel="stylesheet" type="text/css" href="./css/forum/notice.css"/>
@@ -16,29 +17,34 @@
 </head>
 
 <body>
-    <div id="grid">
-        <div id="logo">
-            <img src="./assets/carton.png"/>
-        </div>
-        <div id="navigation"></div>
-        <div id="user">
-            <p id="welcome"></p>
-            <p id="now-playing"></p>
-        </div>
-        <div id="notice">
-            <b>This forum is not open to the public.</b>
-            <p>milkbox.club is a private community dedicated to sharing, cataloguing, and archiving music.</p>
-        </div>
-        <div id="filter">
-            <div id="heading"><b>Recent posts</b></div>
-            <div id="select">
-                <ul>
-                    <li class="current">Recent</li>
-                    <li>Top</li>
-                </ul>
+    <div id="marquee">
+        <div id="left"></div>
+        <div id="top"></div>
+        <div id="right"></div>
+        <div id="grid">
+            <div id="logo">
+                <img src="./assets/carton.png"/>
             </div>
+            <div id="navigation"></div>
+            <div id="user">
+                <p id="welcome"></p>
+                <p id="now-playing"></p>
+            </div>
+            <div id="notice">
+                <b>This forum is not open to the public.</b>
+                <p>milkbox.club is a private community dedicated to sharing, cataloguing, and archiving music.</p>
+            </div>
+            <div id="filter">
+                <div id="heading"><b>Recent posts</b></div>
+                <div id="select">
+                    <ul>
+                        <li class="current">Recent</li>
+                        <li>Top</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="posts"></div>
         </div>
-        <div id="posts"></div>
     </div>
 </body>
 

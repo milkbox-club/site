@@ -1,0 +1,30 @@
+#marquee {
+    display: grid;
+    width: 100vw;
+    min-height: 100vh;
+    margin: 10vh 0;
+    grid-template-columns: 32px 1fr 32px;
+    grid-template-rows: 32px 1fr;
+    grid-gap: 0;
+    grid-template-areas:
+        "top top right"
+        "left page right"
+}
+
+#marquee #left {
+    grid-area: left;
+    display: flex;
+    background-color: brown;
+}
+
+#marquee #top {
+    grid-area: top;
+    display: flex;
+    background-color: blueviolet;
+}
+
+#marquee #right {
+    grid-area: right;
+    display: flex;
+    background-color: blue
+}
