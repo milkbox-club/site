@@ -2,14 +2,15 @@
     grid-area: page;
     display: grid;
     margin: 10vh 32px;
-    grid-template-columns: 128px auto 1fr;
-    grid-template-rows: 128px auto auto 1fr;
+    grid-template-columns: 128px 1fr;
+    grid-template-rows: 64px 32px auto auto 1fr;
     grid-gap: 32px;
     grid-template-areas:
-        "logo user navigation"
-        "notice notice notice"
-        "filter filter filter"
-        "posts posts posts";
+        "logo navigation"
+        "logo user"
+        "notice notice"
+        "filter filter"
+        "posts posts";
 }
 
 @media only screen and (min-width: 800px) {

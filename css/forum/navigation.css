@@ -1,0 +1,9 @@
+#navigation li {
+    display: inline;
+    margin-right: 8px;
+    text-decoration: underline;
+}
+
+#navigation a {
+    color: inherit;
+}
