@@ -13,9 +13,11 @@
 }
 
 @keyframes move {
+    from {
+        transform: translateX(calc(-100%));
+    }
     to {
-        transform:translateX(-100%);
-        left: 100%;
+        transform: translateX(calc(100vw));
     }
 }
 
@@ -25,19 +27,25 @@
     max-height: 32px;
     background-color: #000000;
     color: #ffffff;
+    overflow: hidden;
 }
 
 #marquee span {
     display: inline-block;
-    position: relative;
+    position: absolute;
     left: 0;
-    animation: move 10s alternate infinite linear;
+    animation: move 20s infinite linear;
+}
+
+#marquee span.second {
+    animation-fill-mode: both;   
+    animation-delay: 10s;
 }
 
 #marquee #left {
     grid-area: left;
     width: calc(100vh - 32px);
-    transform: rotate(90deg) rotate(180deg) translateX(calc(-100%)); /* rotate and center */
+    transform: rotate(90deg) rotate(180deg) translateX(calc(-100%));
     transform-origin: top left;
 }
 
@@ -49,7 +57,7 @@
 #marquee #right {
     grid-area: right;
     width: 100vh;
-    transform: rotate(90deg) translateY(calc(-100%)); /* rotate and center */
+    transform: rotate(90deg) translateY(calc(-100%));
     transform-origin: top left;
 }
 
