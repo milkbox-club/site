@@ -54,6 +54,10 @@
     color: #989EA5;
 }
 
+.post .posted_at u {
+    padding-left: 8px;
+}
+
 .post .body, .post .title, .post .votes {
     border-left: 2px solid #989EA5;
 }
