@@ -73,6 +73,7 @@ body {
 
 #filter > #select ul {
     list-style: none;
+    margin: auto 0;
 }
 
 #filter > #select li {
