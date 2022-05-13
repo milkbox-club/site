@@ -48,7 +48,7 @@
 
 #marquee #right {
     grid-area: right;
-    width: calc(100vh - 32px);
+    width: 100vh;
     transform: rotate(90deg) translateY(calc(-100%)); /* rotate and center */
     transform-origin: top left;
 }
