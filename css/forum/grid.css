@@ -60,6 +60,7 @@ body {
 #filter > #heading {
     grid-area: heading;
     display: flex;
+    align-items: center;
 }
 
 #filter > #select {
