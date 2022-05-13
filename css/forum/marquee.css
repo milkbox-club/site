@@ -1,7 +1,9 @@
 #marquee {
     display: grid;
     width: 100vw;
-    min-height: 100vh;
+    height: 100vh;
+    max-height: 100vh;
+    margin: 0;
     grid-template-columns: 32px 1fr 32px;
     grid-template-rows: 32px 1fr;
     grid-gap: 0;
@@ -10,22 +12,46 @@
         "left page right"
 }
 
+@keyframes move {
+    to {
+        transform:translateX(-100%);
+        left: 100%;
+    }
+}
+
+#marquee #left, #marquee #top, #marquee #right {
+    display: flex;
+    align-items: center;
+    max-height: 32px;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+#marquee span {
+    display: inline-block;
+    position: relative;
+    left: 0;
+    animation: move 10s alternate infinite linear;
+}
+
 #marquee #left {
     grid-area: left;
-    display: flex;
-    background-color: brown;
+    width: 100vh;
+    transform: rotate(90deg) rotate(180deg) translateX(calc(-100%)); /* rotate and center */
+    transform-origin: top left;
 }
+
 
 #marquee #top {
     grid-area: top;
-    display: flex;
-    background-color: blueviolet;
+    width: 100vw;
 }
 
 #marquee #right {
     grid-area: right;
-    display: flex;
-    background-color: blue
+    width: 100vh;
+    transform: rotate(90deg) translateY(calc(-100%)); /* rotate and center */
+    transform-origin: top left;
 }
 
 #marquee #page {
@@ -33,4 +59,5 @@
     display: flex;
     width: 100%;
     justify-content: center;
+    overflow-y: scroll;
 }
