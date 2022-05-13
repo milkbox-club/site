@@ -39,14 +39,14 @@
 #navigation {
     grid-area: navigation;
     display: flex;
-    justify-content: center;
+    align-items: center;
 }
 
 #user {
     grid-area: user;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
 }
 
 #notice {
