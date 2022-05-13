@@ -82,7 +82,7 @@ body {
 
 #filter > #select li.current {
     background-color: #000000;
-    border-radius: 16px;
+    border-radius: 32px;
 }
 
 #posts {
