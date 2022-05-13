@@ -5,10 +5,10 @@
 
 #navigation li {
     display: inline;
-    margin-right: 8px;
-    text-decoration: underline;
+    margin-right: 4px;
 }
 
 #navigation a {
     color: inherit;
+    text-decoration: underline;
 }
