@@ -76,7 +76,8 @@ body {
 #filter > #select li {
     display: inline-block;
     color: #989EA5;
-    padding: 4px 8px;
+    padding: 8px 16px;
+    cursor: pointer;
 }
 
 #filter > #select li.current {
