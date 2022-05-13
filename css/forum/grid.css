@@ -68,8 +68,11 @@ body {
 }
 
 #filter > #select ul {
-    display: inline;
     list-style: none;
+}
+
+#filter > #select li {
+    display: inline-block;
     color: #989EA5;
 }
 
