@@ -15,6 +15,7 @@ body {
     grid-template-areas:
         "logo user navigation"
         "notice notice notice"
+        "filter filter filter"
         "posts posts posts";
 }
 
@@ -46,6 +47,36 @@ body {
     flex-direction: column;
 }
 
+#filter {
+    grid-area: filter;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "heading select";
+}
+
+#filter > #heading {
+    grid-area: heading;
+    display: flex;
+}
+
+#filter > #select {
+    grid-area: select;
+    display: flex;
+}
+
+#filter > #select ul {
+    display: inline;
+    list-style: none;
+    color: #989EA5;
+}
+
+#filter > #select li.current {
+    background-color: #000000;
+    border-radius: 16px;
+}
 
 #posts {
     grid-area: posts;
