@@ -10,7 +10,6 @@
     grid-template-areas:
         "top top right"
         "left page right";
-    user-select: none;
 }
 
 @keyframes move {
@@ -29,6 +28,7 @@
     background-color: #000000;
     color: #ffffff;
     overflow: hidden;
+    user-select: none;
 }
 
 #marquee span {
