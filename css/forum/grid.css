@@ -3,7 +3,7 @@
     display: grid;
     margin: 10vh 32px;
     grid-template-columns: 128px 1fr;
-    grid-template-rows: 64px 32px auto auto 1fr;
+    grid-template-rows: 32px 64px auto auto 1fr;
     grid-gap: 32px;
     grid-template-areas:
         "logo navigation"
