@@ -14,7 +14,7 @@ body {
     grid-template-areas:
         "logo user navigation"
         "notice notice notice"
-        "posts posts notice";
+        "posts posts posts";
 }
 
 #logo {
@@ -40,7 +40,7 @@ body {
 }
 
 #notice {
-    grid-area: user;
+    grid-area: notice;
     display: flex;
     flex-direction: column;
 }
