@@ -2,7 +2,7 @@
     grid-area: page;
     display: grid;
     margin: 10vh 32px;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: 1fr auto;
     grid-template-rows: repeat(auto, 4) 1fr;
     grid-gap: 32px;
     grid-template-areas:
