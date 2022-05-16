@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/png" href="./assets/carton.png"/>
+    <script src="./lib/authenticate.js"></script>
 </head>
 
 <style>
@@ -29,19 +30,9 @@
 </body>
 
 <script>
-    const urlParams = new URLSearchParams(window.location.search);
-    const app_id = urlParams.get('application_id');
-    console.log('application_id=', app_id);
-    if (app_id != null) {
-        const url = `/api/getUser?application_id=${app_id}`;
-        console.log('api_url=', url);
-        fetch(url).then(response => response.json()).then(data => {
-            console.log('response_data=', data);
-            if (('enabled' in data) && (data.enabled == true)) {
-                window.location = `/forum.html?application_id=${app_id}`;
-            }
-        });
-    }
+    assertApplicationId((data) => { 
+        window.location = `/forum.html?application_id=${application_id}`;
+    });
 </script>
 
 </html>
