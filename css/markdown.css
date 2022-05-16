@@ -1,11 +1,11 @@
 #page {
     display: flex;
     margin: 0 32px;
+    padding-bottom: 10vh;
 }
 
 .markdown {
     margin: 10vh 0;
-    padding-bottom: 10vh;
     width: 100%;
 }
 
