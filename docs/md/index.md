@@ -1,2 +1,2 @@
-- [About](../about.html)
-- [Source tree](../tree.html)
+- [About](./about.html)
+- [Source tree](./tree.html)
