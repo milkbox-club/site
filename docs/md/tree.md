@@ -50,21 +50,21 @@ API
 
 ```
 site
-├─ index.html                          Landing page
-├─ forum.html                          Forum page
-├─ artist.html                         Artist page
+├─ index.html                      Landing page
+├─ forum.html                      Forum page
+├─ artist.html                     Artist page
 ├─ docs
 │  └─ ...
 └─ lib
-   ├─ authenticate.js   
-   │  └─ assertApplicationId()         Validates application_id in URLSearchParams and callsback/redirects
-   ├─ motd.js                          Render the MOTD scrolling text
-   ├─ markdown.js                      Load and render markdown files using Showdown
-   ├─ showdown.js                      Third-party markdown renderer
+   ├─ authenticate.js
+   │  └─ assertApplicationId()     Validates application_id in URLSearchParams
+   ├─ motd.js                      Render the MOTD scrolling text
+   ├─ markdown.js                  Load and render markdown files using Showdown
+   ├─ showdown.js                  Third-party markdown renderer
    ├─ forum.js
-   │  ├─ renderForumPage()             Called on authentication, renders given the user API data
-   │  ├─ gotoArtist()                  Redirects to /artist.html with URLSearchParams
-   │  └─ gotoAlbum()                   Redirects to /artist.html with URLSearchParams
+   │  ├─ renderForumPage()         Renders page given the user API data
+   │  ├─ gotoArtist()              Redirects to /artist.html with search params
+   │  └─ gotoAlbum()               Redirects to /artist.html with search params
    ├─ artist.js
    └─ post.js
 ```
