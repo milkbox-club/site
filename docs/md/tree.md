@@ -19,6 +19,26 @@ milkbox app
 API
 ├─ routes
 │  ├─ index.js
+│  │  ├─ /ping
+│  │  ├─ strToKey()                Returns string in a key format
+│  │  ├─ generateId()              Returns a random character string
+│  │  ├─ validApplicationId()      Returns application ID validity
+│  │  ├─ validPostId()             Returns post ID validity
+│  │  ├─ writeUncategorizedData()  Writes data to CSV file for reference
+│  │  ├─ writeUserData()           Writes user data locally
+│  │  ├─ writeAlbumData()          Writes album data locally
+│  │  ├─ writePostData()           Writes post data locally
+│  │  ├─ isAdmin()                 Returns true if user has an admin role
+│  │  ├─ createArtist()            Creates artist object and writes to file
+│  │  ├─ createAlbum()             Creates album object and writes to file
+│  │  ├─ createUser()              Creates user object and writes to file
+│  │  ├─ createPost()              Creates post object and writes to file
+│  │  ├─ setUserAlias()            Updates user alias and writes to file
+│  │  ├─ getUserAlias()            Return user alias or 'User' if not set
+│  │  ├─ inc'ContributionCount()   Inc. contributions count and write to file
+│  │  ├─ addVoteToPost()           Add user vote to post
+│  │  ├─ removeVoteFromPost()      Remove user vote from post
+│  │  ├─ togglePostVote()          Adds or removes user vote depending on state
 │  ├─ albums.js
 │  │  ├─ /getAlbum
 │  │  ├─ /getAlbums
