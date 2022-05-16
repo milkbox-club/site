@@ -20,25 +20,25 @@ API
 ├─ routes
 │  ├─ index.js
 │  │  ├─ /ping
-│  │  ├─ strToKey()                Returns string in a key format
-│  │  ├─ generateId()              Returns a random character string
-│  │  ├─ validApplicationId()      Returns application ID validity
-│  │  ├─ validPostId()             Returns post ID validity
-│  │  ├─ writeUncategorizedData()  Writes data to CSV file for reference
-│  │  ├─ writeUserData()           Writes user data locally
-│  │  ├─ writeAlbumData()          Writes album data locally
-│  │  ├─ writePostData()           Writes post data locally
-│  │  ├─ isAdmin()                 Returns true if user has an admin role
-│  │  ├─ createArtist()            Creates artist object and writes to file
-│  │  ├─ createAlbum()             Creates album object and writes to file
-│  │  ├─ createUser()              Creates user object and writes to file
-│  │  ├─ createPost()              Creates post object and writes to file
-│  │  ├─ setUserAlias()            Updates user alias and writes to file
-│  │  ├─ getUserAlias()            Return user alias or 'User' if not set
-│  │  ├─ inc'ContributionCount()   Inc. contributions count and write to file
-│  │  ├─ addVoteToPost()           Add user vote to post
-│  │  ├─ removeVoteFromPost()      Remove user vote from post
-│  │  ├─ togglePostVote()          Adds or removes user vote depending on state
+│  │  ├─ strToKey()                    Returns string in a key format
+│  │  ├─ generateId()                  Returns a random character string
+│  │  ├─ validApplicationId()          Returns application ID validity
+│  │  ├─ validPostId()                 Returns post ID validity
+│  │  ├─ writeUncategorizedData()      Writes data to CSV file for reference
+│  │  ├─ writeUserData()               Writes user data locally
+│  │  ├─ writeAlbumData()              Writes album data locally
+│  │  ├─ writePostData()               Writes post data locally
+│  │  ├─ isAdmin()                     Returns true if user has an admin role
+│  │  ├─ createArtist()                Creates artist object and writes to file
+│  │  ├─ createAlbum()                 Creates album object and writes to file
+│  │  ├─ createUser()                  Creates user object and writes to file
+│  │  ├─ createPost()                  Creates post object and writes to file
+│  │  ├─ setUserAlias()                Updates user alias and writes to file
+│  │  ├─ getUserAlias()                Return user alias or 'User' if not set
+│  │  ├─ inc'ContributionCount()       Inc. contributions count and write to file
+│  │  ├─ addVoteToPost()               Add user vote to post
+│  │  ├─ removeVoteFromPost()          Remove user vote from post
+│  │  ├─ togglePostVote()              Adds or removes user vote depending on state
 │  ├─ albums.js
 │  │  ├─ /getAlbum
 │  │  ├─ /getAlbums
@@ -70,21 +70,21 @@ API
 
 ```
 site
-├─ index.html                      Landing page
-├─ forum.html                      Forum page
-├─ artist.html                     Artist page
+├─ index.html                          Landing page
+├─ forum.html                          Forum page
+├─ artist.html                         Artist page
 ├─ docs
 │  └─ ...
 └─ lib
    ├─ authenticate.js
-   │  └─ assertApplicationId()     Validates application_id in URLSearchParams
-   ├─ motd.js                      Render the MOTD scrolling text
-   ├─ markdown.js                  Load and render markdown files using Showdown
-   ├─ showdown.js                  Third-party markdown renderer
+   │  └─ assertApplicationId()         Validates application_id in URLSearchParams
+   ├─ motd.js                          Render the MOTD scrolling text
+   ├─ markdown.js                      Load and render markdown files using Showdown
+   ├─ showdown.js                      Third-party markdown renderer
    ├─ forum.js
-   │  ├─ renderForumPage()         Renders page given the user API data
-   │  ├─ gotoArtist()              Redirects to /artist.html with search params
-   │  └─ gotoAlbum()               Redirects to /artist.html with search params
+   │  ├─ renderForumPage()             Renders page given the user API data
+   │  ├─ gotoArtist()                  Redirects to /artist.html with search params
+   │  └─ gotoAlbum()                   Redirects to /artist.html with search params
    ├─ artist.js
    └─ post.js
 ```
