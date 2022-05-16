@@ -1,12 +1,15 @@
 #page {
     display: flex;
     margin: 0 32px;
-    padding-bottom: 10vh;
 }
 
 .markdown {
     margin: 10vh 0;
     width: 100%;
+}
+
+.markdown:last-child {
+    margin-bottom: 10vh;
 }
 
 @media only screen and (min-width: 800px) {
