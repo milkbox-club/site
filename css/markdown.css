@@ -8,7 +8,7 @@
     width: 100%;
 }
 
-.markdown:last-child {
+.markdown :last-child {
     margin-bottom: 10vh;
 }
 
