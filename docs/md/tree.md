@@ -20,6 +20,7 @@ API
 ├─ routes
 │  ├─ index.js
 │  │  ├─ /ping
+│  │  ├─ /badge
 │  │  ├─ strToKey()                    Returns string in a key format
 │  │  ├─ generateId()                  Returns a random character string
 │  │  ├─ validApplicationId()          Returns application ID validity
