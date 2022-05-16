@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>milkbox</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="./assets/carton.png"/>
+    <link rel="stylesheet" type="text/css" href="./css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/forum/marquee.css"/>
+    <script src="./lib/authenticate.js"></script>
+    <script src="./lib/user.js"></script>
+</head>
+
+<body>
+    <div id="marquee">
+        <div id="page">
+            <p id="user-data"></p>
+        </div>
+    </div>
+</body>
+
+<script src="./lib/motd.js"></script>
+
+<script>
+    assertApplicationId((data) => { renderUserPage(data) });
+</script>
+
+</html>
