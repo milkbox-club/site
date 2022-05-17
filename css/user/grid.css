@@ -8,7 +8,7 @@
     grid-column-gap: 64px;
     grid-template-areas:
         "logo blank"
-        "user user"
+        "avatar user"
         "filter filter"
         "posts posts";
 }
@@ -34,6 +34,19 @@
     width: 128px;
     height: 128px;
     filter: invert(1);
+}
+
+#avatar {
+    grid-area: avatar;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#avatar img {
+    width: 64px;
+    height: 64px;
+    border: 1px solid #989EA5;
 }
 
 #user {
