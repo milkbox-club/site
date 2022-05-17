@@ -64,7 +64,7 @@
     padding-left: 8px;
 }
 
-.post .body, .post .title, .post .votes {
+.post .body, .post .title, .post .tags, .post .votes {
     border-left: 2px solid #989EA5;
 }
 
