@@ -20,7 +20,7 @@
         <div id="page">
             <div id="grid">
                 <div id="logo">
-                    <img src="./assets/carton.png"/>
+                    <a id="forum-link" href="/forum.html"><img src="./assets/carton.png"/></a>
                 </div>
                 <div id="blank"></div>
                 <div id="user"></div>
@@ -38,6 +38,9 @@
 
 <script>
     assertApplicationId((data) => { renderUserPage(data) });
+    // Append application_id search param to forum link
+    var link = document.getElementById('forum-link');
+    link.href += `?application_id=${application_id}`;
 </script>
 
 </html>
