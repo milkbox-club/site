@@ -62,6 +62,10 @@
     border-left: 2px solid #989EA5;
 }
 
+.post .body p {
+    padding: 0;
+}
+
 .post .body a {
     display: inline;
 }
