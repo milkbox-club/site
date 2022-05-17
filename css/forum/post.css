@@ -38,6 +38,7 @@
 .post .tags {
     grid-area: tags;
     display: flex;
+    color: #989EA5;
 }
 
 .post .bullet {
