@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>milkbox</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="./assets/carton.png"/>
+    <link rel="stylesheet" type="text/css" href="./css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/forum/marquee.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/submit/grid.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/submit/form.css"/>
+    <script src="./lib/authenticate.js"></script>
+    <script src="./lib/submit.js"></script>
+</head>
+
+<body>
+    <div id="marquee">
+        <div id="page">
+            <div id="grid">
+                <div id="logo">
+                    <img src="./assets/carton.png"/>
+                </div>
+                <div id="blank"></div>
+                <div id="form">
+                    <form>
+                        <input name="title" placeholder="title..." id="title-input"></input>
+                        <textarea name="body" placeholder="body..." id="body-input"></textarea>
+                        <input name="tags" placeholder="tags..." id="tags-input"></input>
+                    </form>
+                    <button onclick="submitPost()">Submit</button> 
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="./lib/motd.js"></script>
+
+<script>
+    assertApplicationId((data) => { console.log(data) });
+</script>
+
+</html>

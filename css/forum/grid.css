@@ -10,7 +10,6 @@
         "logo blank"
         "user navigation"
         "notice notice"
-        "submit submit"
         "filter filter"
         "posts posts";
 }
@@ -53,12 +52,6 @@
 
 #notice {
     grid-area: notice;
-    display: flex;
-    flex-direction: column;
-}
-
-#submit {
-    grid-area: submit;
     display: flex;
     flex-direction: column;
 }
