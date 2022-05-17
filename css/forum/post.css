@@ -36,7 +36,7 @@
 }
 
 .post .tags {
-    grid-area: body;
+    grid-area: tags;
     display: flex;
 }
 
