@@ -1,10 +1,11 @@
 .post {
     display: grid;
     grid-template-columns: repeat(3, auto) 1fr;
-    grid-template-rows: repeat(3, auto);
+    grid-template-rows: repeat(4, auto);
     grid-template-areas:
         "margin title title title"
         "margin body body body"
+        "margin tags tags tags"
         "margin votes bullet posted_at";
     background-color: #F1F1F1;
     margin-bottom: 32px;
@@ -30,6 +31,11 @@
 }
 
 .post .body {
+    grid-area: body;
+    display: flex;
+}
+
+.post .tags {
     grid-area: body;
     display: flex;
 }
