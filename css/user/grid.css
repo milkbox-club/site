@@ -73,6 +73,11 @@
     border: 1px solid #989EA5;
 }
 
+#genres p, #artists p, #tracks p {
+    padding: 0;
+    margin: 0;
+}
+
 #artists {
     grid-area: artists;
     display: flex;
