@@ -58,6 +58,11 @@
     justify-content: center;
 }
 
+#user h1, #user p {
+    padding: 0;
+    margin: 0;
+}
+
 #genres {
     grid-area: genres;
     display: flex;
