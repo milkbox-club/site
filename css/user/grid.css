@@ -2,17 +2,17 @@
     grid-area: page;
     display: grid;
     margin: 10vh 32px;
-    grid-template-columns: 1fr auto;
+    grid-template-columns: 128px calc(1fr - 64px) 1fr;
     grid-template-rows: repeat(auto, 5) 1fr;
     grid-row-gap: 32px;
     grid-column-gap: 64px;
     grid-template-areas:
-        "logo blank"
-        "avatar user"
-        "genres artists"
-        "tracks tracks"
-        "filter filter"
-        "posts posts";
+        "logo blank blank"
+        "avatar user user"
+        "genres genres artists"
+        "tracks tracks tracks"
+        "filter filter filter"
+        "posts posts posts";
 }
 
 @media only screen and (min-width: 800px) {
