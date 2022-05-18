@@ -30,6 +30,7 @@
 #logo {
     grid-area: logo;
     display: flex;
+    width: 128px;
 }
 
 #logo img {
