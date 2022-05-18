@@ -59,21 +59,21 @@
 }
 
 #genres {
-    grid-area: avatar;
+    grid-area: genres;
     display: flex;
     flex-direction: column;
     border: 1px solid #989EA5;
 }
 
 #artists {
-    grid-area: avatar;
+    grid-area: artists;
     display: flex;
     flex-direction: column;
     border: 1px solid #989EA5;
 }
 
 #tracks {
-    grid-area: avatar;
+    grid-area: tracks;
     display: flex;
     flex-direction: column;
     border: 1px solid #989EA5;
