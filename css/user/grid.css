@@ -70,7 +70,6 @@
     grid-area: genres;
     display: flex;
     flex-direction: column;
-    border: 1px solid #989EA5;
     margin: 8px 0px;
     background-color: #F1F1F1;
     color: #989EA5;
@@ -80,7 +79,6 @@
     grid-area: artists;
     display: flex;
     flex-direction: column;
-    border: 1px solid #989EA5;
     margin: 8px 0px;
     background-color: #F1F1F1;
     color: #989EA5;
@@ -90,7 +88,6 @@
     grid-area: tracks;
     display: flex;
     flex-direction: column;
-    border: 1px solid #989EA5;
     margin: 8px 0px;
     background-color: #F1F1F1;
     color: #989EA5;
