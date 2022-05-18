@@ -95,12 +95,8 @@
     margin: 8px 16px;
 }
 
-#genres span p.text, #artists span p.text, #tracks span p.text {
-    padding-left: 8px;
-}
-
 #genres span p.index, #artists span p.index, #tracks span p.index {
-    padding-right: 8px;
+    padding-right: 16px;
     border-right: 2px solid #989EA5;
 }
 
