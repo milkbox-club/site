@@ -90,6 +90,10 @@
     color: #989EA5;
 }
 
+#genres span p, #artists span p, #tracks span p {
+    display: inline-block;
+}
+
 #genres p, #artists p, #tracks p {
     padding: 0;
     margin: 0;
