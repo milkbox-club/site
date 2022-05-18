@@ -94,8 +94,12 @@
 }
 
 #genres span p.index, #artists span p.index, #tracks span p.index {
-    padding-right: 24px;
+    padding-right: 16px;
     border-right: 2px solid #989EA5;
+}
+
+#genres span p.text, #artists span p.text, #tracks span p.text {
+    margin: 0;
 }
 
 #genres p, #artists p, #tracks p {
