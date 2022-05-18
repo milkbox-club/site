@@ -46,9 +46,10 @@
 }
 
 #avatar img {
-    width: 96px;
-    height: 96px;
+    width: 128px;
+    height: 128px;
     border: 1px solid #989EA5;
+    border-radius: 64px;
 }
 
 #user {
