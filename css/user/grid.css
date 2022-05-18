@@ -68,26 +68,22 @@
 
 #genres {
     grid-area: genres;
-    display: flex;
-    flex-direction: column;
-    background-color: #F1F1F1;
-    color: #989EA5;
 }
 
 #artists {
     grid-area: artists;
-    display: flex;
-    flex-direction: column;
-    background-color: #F1F1F1;
-    color: #989EA5;
 }
 
 #tracks {
     grid-area: tracks;
+}
+
+#genres, #artists, #tracks {
     display: flex;
     flex-direction: column;
     background-color: #F1F1F1;
     color: #989EA5;
+    padding: 8px 16px;
 }
 
 #genres span p, #artists span p, #tracks span p {
@@ -96,7 +92,7 @@
 }
 
 #genres span p.index, #artists span p.index, #tracks span p.index {
-    padding-right: 16px;
+    padding-right: 24px;
     border-right: 2px solid #989EA5;
 }
 
