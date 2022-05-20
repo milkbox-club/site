@@ -37,6 +37,11 @@
 
 #music {
     grid-area: music;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+#music > div {
+    background-color: #F1F1F1;
 }
