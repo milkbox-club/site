@@ -1,0 +1,42 @@
+#grid {
+    grid-area: page;
+    display: grid;
+    margin: 10vh 32px;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto 1fr;
+    grid-row-gap: 32px;
+    grid-column-gap: 32px;
+    grid-template-areas:
+        "logo blank"
+        "music music";
+}
+
+@media only screen and (min-width: 800px) {
+    #grid {
+        width: 60vw;
+        margin: 10vh 0px;
+    }
+}
+
+#blank {
+    grid-area: blank;
+    display: flex;
+}
+
+#logo {
+    grid-area: logo;
+    display: flex;
+    width: 128px;
+}
+
+#logo img {
+    width: 128px;
+    height: 128px;
+    filter: invert(1);
+}
+
+#music {
+    grid-area: music;
+    display: flex;
+    flex-direction: column;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>milkbox</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="./assets/carton.png"/>
+    <link rel="stylesheet" type="text/css" href="./css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/forum/marquee.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/forum/marquee.css"/>
+    <script src="./lib/authenticate.js"></script>
+    <script src="./lib/music.js"></script>
+</head>
+
+<body>
+    <div id="marquee">
+        <div id="page">
+            <div id="grid">
+                <div id="logo">
+                    <img src="./assets/carton.png"/>
+                </div>
+                <div id="blank"></div>
+                <div id="music"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="./lib/motd.js"></script>
+
+<script>
+    assertApplicationId((data) => { renderMusic(data) });
+</script>
+
+</html>
