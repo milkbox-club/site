@@ -99,6 +99,7 @@
 }
 
 #genres span p.text, #artists span p.text, #tracks span p.text {
+    display: inline;
     margin: 0;
     color: black;
 }
